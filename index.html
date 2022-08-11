@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="A simple fylo landing page challenge from frontendmentor to learn and demonstrate HTML5 and CSS3">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <!-- import font face -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- import favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+              'bright-cyan': 'hsl(224, 93%, 58%)',
+              'color-primary': 'hsl(243, 87%, 12%)',
+              'color-primary-desaturated': 'hsl(238, 22%, 44%)',
+              'Light-Grayish-Blue': 'hsl(240, 75%, 98%)',
+              'Moderate-Cyan':' hsl(170, 45%, 43%)',
+              'Light-Gray': 'hsl(0, 0%, 75%)'
+            },
+            fontFamily:{
+              raleway:['Raleway', 'sans-serif'],
+              'open-sans': ['Open Sans', 'sans-serif'],               
+            }
+          }
+        }
+      }
+    </script>
+    <title>Fylo landing page</title>
+  </head>
+
+  <body class="font-opensans font-normal text-dark">
+    
+    <header>
+      <div> 
+        <nav class= "relative container mx-auto px-6 pt-6 flex flex-row items-center justify-between md:px-12 md:pt-14 lg:px-20 lg:pt-16 ">
+            <img src="./images/logo.svg" alt="Fylo" class= "min-w-max logo h-6 object-contain md:h-12">
+            <ul class= "flex list-none p-0 flex-row text-sm gap-6 lg:gap-14 md:text-base md:leading-[1.125rem]">
+              <li class= "ml-12"><a href="#features" class= "no-underline font-raleway text-[#070439] hover:cursor-pointer hover:text-hover hover:duration-200">Features</a></li>
+              <li class= "ml-12"><a href="#team" class= "no-underline font-raleway text-[#070439] hover:cursor-pointer hover:text-hover hover:duration-200">Team</a></li>
+              <li class= "ml-12"><a href="#signin" class= "no-underline font-raleway text-[#070439] hover:cursor-pointer hover:text-hover hover:duration-200">Sign In</a></li>
+            </ul>
+        </nav>
+      </div> 
+    </header>
+    
+    <section>
+      <div class= "mx-auto hero container px-7 flex flex-col-reverse items-center pt-24 pb-[5.625rem] lg:px-20 lg:pb-[10.25rem] lg:flex-row">
+          <div class= "left-text text-center flex flex-col lg:text-left lg:w-1/2 lg:self-start lg:mt-16">
+            <h1 class="text-3xl leading-9 font-bold mt-10">
+              All your files in one secure location, accessible anywhere.
+            </h1>
+            <p class= "text-md leading-5 px-3 mt-6 mb-8 self-center">
+             Fylo stores your most important files in one secure location. Access them wherever you need, share and collaborate with friends, family, and co-workers.
+            </p>
+            <form class= "w-full self-center max-w-xs flex flex-col px-2 lg:max-w-none lg:p-0 lg:self-start lg:flex-row">
+             <input class= "h-10 lg:h-11 pl-5 w-full xl:w-80 rounded border border-solid border-dark focus:border-cobalthover focus:outline focus:outline-cobalthover  invalid:border-rose  shadow-buttonShadow
+             placeholder:text-xs placeholder:text-[#C2C2C2]" type="email" name="email" id="email" placeholder="Enter your email...">
+             <button style="padding: 12px 40px;" type="submit" class= "h-10 lg:h-11 rounded bg-bright-cyan text-sm text-white font-bold mt-4 lg:mt-0 
+             shadow-buttonShadow hover:bg-cobalthover hover:cursor-pointer lg:w-[12.5rem] lg:mx-4 lg:mr-8">Get Started</button>
+            </form>
+          </div>
+            <div class= "right-image px-2 lg:px-0 lg:w-1/2">
+             <img src="./images/illustration-1.svg" alt="">
+            </div>
+      </div>
+    </section>
+     
+      
+    <section class= "main bg-no-repeat bg-cover bg-center bg-[length:500%_100%] lg:bg-[length:350%_100%]" style="background-image:url(./images/bg-curve-desktop.svg)">    
+      <div class= "main-container container mx-auto px-7 pt-24 flex flex-col-reverse items-center pb-20 lg:px-20 lg:pb-[6.75rem] lg:pt-40 lg:flex-row lg:justify-between">
+         <div class= "left-text text-center flex flex-col items-center lg:text-left lg:items-start lg:w-[57.5%] lg:pr-[3.625rem]">
+           <h2 class="font-raleway text-base leading-9 font-bold mt-10 lg:mt-0 md:text-4xl md:leading-[3.375rem] xl:text-[2.5rem] xl:leading-[3.75rem]">
+            Stay productive, wherever you are
+           </h2>
+           <p class= "text-sm leading-5 px-3 mt-6 mb-4 lg:px-0  lg:mt-8 self-center md:max-w-[33rem] md:text-base lg:self-start">
+             Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.
+           </p>
+           <p class= "text-sm leading-5 px-3 lg:px-0 md:max-w-[33rem] md:text-base lg:self-start">
+             Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required!
+           </p>
+           <a class="text-[#3DA08F]" href="#">See how Fylo works <img src="./images/icon-arrow.svg" ></a>
+         
+           <div class= "bg-white rounded my-10 p-6 shadow-[0 0 10px] shadow-[#000000] w-[80%]">
+             <img src="./images/icon-quotes.svg" class= "max-w-full">
+             <p class= "text-left pt-1.5 pb-3 md:pt-2 md:pb-4 text-[0.625rem] leading-[1.125rem] md:text-sm md:leading-6">
+               Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.
+             </p>
+             <div class= "flex mt-2">
+                <div>
+                 <img src="./images/avatar-testimonial.jpg" class= "h-6 rounded-full md:h-8" alt=>
+                </div>
+                <div>
+                  <h4 class= "text-[0.563rem] leading-[0.765rem] font-bold md:text-[0.688rem] md:leading-[0.935rem]">
+                    Kyle Burton
+                  </h4>
+                  <small class= "text-[0.375rem] leading-[0.7rem] md:text-[0.5rem] md:leading-[0.938rem]">
+                    Founder & CEO, Huddle
+                  </small>
+                </div>
+              </div>
+            </div>
+         </div>
+         <div class= "flex-wrap items-center flex-grow">
+           <img src="./images/illustration-2.svg" alt="testimonial-image" class= "max-w-full"/>
+         </div>
+
+      </div>
+    </section>
+
+    <section class= "px-0 py-12 text-white bg-[#9FA0C1]">
+      <div class= " container mx-auto  px-7 pt-[3.375rem] pb-[4.5rem] lg:px-20 xl:pr-[7.5rem] lg:pt-[6.25rem] lg:pb-20 flex flex-col lg:flex-row lg:justify-between  items-center text-center lg:text-left">
+        <div class= "flex">
+          <div class= "flex flex-col lg-flex-row lg:w-3/5 xl:w-1/2 lg:mt-0 lg:mb-0">
+            <h2 class= "font-raleway font-bold text-white text-lg leading-6  md:text-[2rem] md:leading-[3rem]">
+              Get early access today
+            </h2>
+            <p class= "text-white text-sm leading-5 px-12 mt-6 lg:px-0 lg:mt-4 md:max-w-lg md:text-base">
+              It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.
+            </p>
+          </div>
+          <div class= "w-60 mt-8 lg:mt-0 lg:mb-0  lg:ml-8 flex-col lg:w-2/5 xl:w-1/2 lg:max-w-[30rem]">
+            <form class= "flex flex-col flex-row justify-between items-center">
+              <input class= "h-10 lg:h-11 pl-5 w-full xl:w-80 rounded border border-solid border-dark focus:border-cobalthover focus:outline focus:outline-cobalthover  invalid:border-rose  shadow-buttonShadow
+              placeholder:text-xs placeholder:text-[#C2C2C2]" type="email" name="email" id="email" placeholder="email@example.com">
+              <button type="submit" class= "h-10 lg:h-11 rounded bg-bright-cyan text-sm text-white font-bold mt-4 lg:mt-0 shadow-buttonShadow hover:bg-cobalthover hover:cursor-pointer lg:w-[12.5rem] lg:mx-4 lg:mr-8">Get Started For Free</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+      
+    
+    <footer class= "px-0 py-12 text-white bg-[#070439]">
+      <div class= "container">
+          <img src="./images/logo.svg" alt="Fylo logo" class= "max-w-full"> 
+        <div class= "flex p-8">
+        <div>
+          <ul class= "list-none no-underline">
+            <li class= "mb-5"><img src="./images/icon-phone.svg" class= "max-w-full"> <a href="tel:15431234567">Phone: +1-543-123-4567</a></li>
+            <li class= "mb-5"><img src="./images/icon-email.svg" class= "max-w-full"> <a href="mailto:example@fylyo.com">example@fylo.com</a></li>
+          </ul>
+        </div>
+  
+        <div>
+          <ul>
+            <li>About Us</li>
+            <li>Jobs</li>
+            <li>Press</li>
+            <li>Blog</li>
+          </ul>
+        </div>
+          
+        <div>
+          <ul>
+            <li>Contact Us</li>
+            <li>Terms</li>
+            <li>Privacy</li>
+          </ul>
+        </div>
+
+        <div>
+          <ul>
+            <li><a href="#facebook">Facebook</a></li>
+            <li><a href="#twitter">Twitter</a></li>
+            <li><a href="#instagram">Instagram</a></li>
+          </ul>
+        </div>
+        </div>  
+      </div>
+    </footer>
+    <!-- footer end -->
+  </body>
+</html>
